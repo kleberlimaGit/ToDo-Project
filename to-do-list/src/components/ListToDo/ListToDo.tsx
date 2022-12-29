@@ -29,5 +29,3 @@ export function ListToDo({id, task, onDeleteTask, onCountMark}: List) {
     </div>
   );
 }
-
-/*165 */
