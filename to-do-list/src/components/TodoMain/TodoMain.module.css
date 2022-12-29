@@ -22,8 +22,12 @@
 
 }
 
-.btnAdd:hover{
+.btnAdd:hover:not(:disabled) {
     background-color: var(--blue);
+}
+
+.btnAdd:disabled {
+    cursor: not-allowed;
 }
 
 .formStyle {

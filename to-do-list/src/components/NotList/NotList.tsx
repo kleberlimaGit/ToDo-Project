@@ -1,5 +1,5 @@
 import styles from "./NotList.module.css";
-import ClipBoard from "../assets/ClipBoard.svg";
+import ClipBoard from "../../assets/ClipBoard.svg";
 export function NotList() {
   return (
     <div className={styles.div}>

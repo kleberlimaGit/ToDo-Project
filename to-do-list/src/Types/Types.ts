@@ -1,5 +1,7 @@
  export interface List {
     id:string;
-    description: string;
+    task: string;
+    onDeleteTask: (task: string) => void;
+    onCountMark : (mark: boolean) => void;
   }
   
