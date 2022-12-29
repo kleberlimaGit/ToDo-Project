@@ -1,5 +1,4 @@
 .container{
-    width: 46rem;
     height: 4.5rem;
     background: var(--gray-400);
     border-radius: 8px;
@@ -24,7 +23,7 @@
   
   .round label {
     background-color: transparent;
-    border: 1px solid var(--blue);
+    border: 2px solid var(--blue);
     border-radius: 50%;
     cursor: pointer;
     height: 20px;
@@ -34,17 +33,21 @@
     width: 20px;
     margin-top: 4px;
   }
+
+  .round label:hover {
+    border: 2px solid var(--blue-dark);
+  }
   
   .round label:after {
     border: 2px solid #fff;
     border-top: none;
     border-right: none;
     content: "";
-    height: 2px;
-    left: 4px;
+    height: 3px;
+    left: 3px;
     opacity: 0;
     position: absolute;
-    top: 7px;
+    top: 5px;
     transform: rotate(-45deg);
     width: 9px;
   }
@@ -56,6 +59,12 @@
   .round input[type="checkbox"]:checked + label {
     background-color: var(--purple-dark);
     border-color: var(--purple-dark);
+  }
+
+  .round input[type="checkbox"]:checked + label:hover {
+    background-color: var(--purple);
+    border: 2px solid var(--purple);
+
   }
   
   .round input[type="checkbox"]:checked + label:after {
@@ -77,4 +86,11 @@
     text-decoration: line-through;
     text-decoration-thickness: 0.1rem;
     color: var(--gray-300);
+  }
+
+
+  @media (max-width: 768px){
+    .container{
+      height: 7rem;
+    }
   }

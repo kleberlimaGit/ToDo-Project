@@ -1,6 +1,6 @@
 .container{
-    width: 46rem;
-    margin: 20px auto;
+    max-width: 46rem;
+    margin: -1.7rem auto;
 }
 
 .btnAdd{
@@ -48,3 +48,65 @@
 .formStyle > input:focus{
     border: 1px solid var(--purple-dark);
 }
+
+.containerTaskConclude {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: row;
+    
+    margin-bottom: 1.5rem;
+}
+
+.taskCreated strong{
+    color: var(--blue);
+    font-size: bold;
+    margin-right: 8px;
+}
+
+.taskCreated span{
+    color: var(--gray-100);
+    background-color: var(--gray-400);
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 19px;
+}
+
+.taskConclude strong{
+    color: var(--purple);
+    font-size: bold;
+    margin-right: 8px;
+}
+
+
+.taskConclude span{
+    color: var(--gray-100);
+    background-color: var(--gray-400);
+    padding: 4px 8px;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px){
+ 
+    html{
+       font-size: 87.5%;
+    }
+    .formStyle {
+       flex-direction: column;
+    }
+    .formStyle input {
+        width: 100%;
+    }
+    .btnAdd {
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 40rem;
+        padding: 0 1rem;
+    }
+ }

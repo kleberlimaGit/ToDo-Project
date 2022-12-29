@@ -1,12 +1,7 @@
 import { Trash } from 'phosphor-react'
 import styles from './ListToDo.module.css'
 import { ChangeEvent, useState } from 'react';
-
-
-interface List {
-  id:Number;
-  description: string;
-}
+import { List } from '../Types/Types';
 
 export function ListToDo({id, description}: List) {
 
